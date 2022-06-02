@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - border
+  - ball
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: bg
+    uniqueID: 4264640711
+    locked: 0
+  - name: bg cp
+    uniqueID: 4030346223
+    locked: 0
+  - name: path
+    uniqueID: 3103481191
+    locked: 0
+  - name: player
+    uniqueID: 2968870127
+    locked: 0
+  - name: lava
+    uniqueID: 2787969391
+    locked: 0
+  - name: ui layer
+    uniqueID: 451614911
+    locked: 0
