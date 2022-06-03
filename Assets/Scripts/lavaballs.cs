@@ -34,16 +34,18 @@ public class lavaballs : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if(collision.gameObject.tag =="Border")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     private void Flip(float x)
-{
-    faceright = !faceright;
-    Vector3 theScale = transform.localScale;
-    theScale.x *= -1;
-    transform.localScale = theScale;
-}
-
-
+    {
+        faceright = !faceright;
+        Vector2 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
 }

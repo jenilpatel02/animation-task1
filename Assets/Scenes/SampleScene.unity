@@ -239,10 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946bcb04ad28e444f8ae4256925622a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxcollider: {fileID: 397049916}
-  player: {fileID: 397049913}
   anim1: {fileID: 397049918}
-  istrue: 0
 --- !u!58 &4786454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1277,6 +1274,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &503155648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503155649}
+  m_Layer: 0
+  m_Name: fireball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503155649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503155648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42952952, y: -0.6825041, z: -0.4363587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -2540,7 +2567,7 @@ GameObject:
   - component: {fileID: 1301879943}
   m_Layer: 6
   m_Name: r7
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2757,7 +2784,7 @@ GameObject:
   - component: {fileID: 1349647634}
   m_Layer: 6
   m_Name: border
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4558,10 +4585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946bcb04ad28e444f8ae4256925622a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxcollider: {fileID: 0}
-  player: {fileID: 0}
   anim1: {fileID: 397049918}
-  istrue: 0
 --- !u!1 &2114351824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 976667471849709136, guid: f1175fd717b8611429f58784f326e813, type: 3}

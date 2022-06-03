@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class deathscript : MonoBehaviour
 {
@@ -10,4 +11,5 @@ public class deathscript : MonoBehaviour
     {
         anim1.SetTrigger("death");
     }
+   
 }

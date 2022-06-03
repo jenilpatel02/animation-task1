@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
@@ -21,10 +22,7 @@ public class PlayerBehaviour : MonoBehaviour
         localscale = transform.localScale;
         movespeed = 3f;
     }
-    void death()
-    {
-        Destroy(gameObject);    
-    }
+   
    
     void onfire()
     {
@@ -40,7 +38,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     void crouch()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             animecontroller.SetBool("crouch", true);
             Debug.Log("crouch");
@@ -50,10 +48,13 @@ public class PlayerBehaviour : MonoBehaviour
             animecontroller.SetBool("crouch", false);
         }
     }
+    void playagain()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
     // Update is called once per frame
     void Update()
     {
-        
         crouch();
         onfire();
         direction = Input.GetAxis("Horizontal")* movespeed;
