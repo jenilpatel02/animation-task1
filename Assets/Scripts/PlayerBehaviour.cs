@@ -12,7 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     Vector2 localscale;
     [SerializeField] GameObject lavaball;
     [SerializeField] Transform gun;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +21,11 @@ public class PlayerBehaviour : MonoBehaviour
         localscale = transform.localScale;
         movespeed = 3f;
     }
-    void kick()
+    void death()
     {
-        if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            animecontroller.SetBool("kick", true);   
-        }
-        else
-        {
-            animecontroller.SetBool("kick", false);
-        }
+        Destroy(gameObject);    
     }
+   
     void onfire()
     {
         if (Input.GetKeyDown(KeyCode.LeftAlt))
@@ -59,7 +53,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        kick();
+        
         crouch();
         onfire();
         direction = Input.GetAxis("Horizontal")* movespeed;
